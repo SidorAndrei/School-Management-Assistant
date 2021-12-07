@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="TOP_CENTER" prefHeight="200.0" prefWidth="400.0" stylesheets="/Style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Adaugare.Nota.NotaController">
+    <Label fx:id="MesajLabel" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="3"/>
+    <Label styleClass="Label" text="Clasa elev: " GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <ChoiceBox fx:id="ClasaChoiceBox" onAction="#handleClasaChoiceBox" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="IX" />
+                <String fx:value="X" />
+                <String fx:value="XI" />
+                <String fx:value="XII" />
+            </FXCollections>
+        </items>
+        <value>
+            <String fx:value="IX" />
+        </value>
+    </ChoiceBox>
+    <ChoiceBox fx:id="LiteraChoiceBox" onAction="#handleClasaChoiceBox" GridPane.columnIndex="2" GridPane.rowIndex="1">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="A" />
+                <String fx:value="B" />
+                <String fx:value="C" />
+                <String fx:value="D" />
+            </FXCollections>
+        </items>
+        <value>
+            <String fx:value="A" />
+        </value>
+    </ChoiceBox>
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <Label styleClass="Label" text="Elev: " GridPane.columnIndex="0" GridPane.rowIndex="3" />
+    <ChoiceBox fx:id="ElevChoiceBox" prefWidth="150" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    <Label GridPane.columnIndex="2" GridPane.rowIndex="3" />
+    <ChoiceBox fx:id="NotaChoiceBox" onAction="#handleNotaChoiceBox" GridPane.columnIndex="3" GridPane.rowIndex="3">
+        <items> <FXCollections fx:factory="observableArrayList">
+                <String fx:value="1" />
+                <String fx:value="2" />
+                <String fx:value="3" />
+                <String fx:value="4" />
+                <String fx:value="5" />
+                <String fx:value="6" />
+                <String fx:value="7" />
+                <String fx:value="8" />
+                <String fx:value="9" />
+                <String fx:value="10" />
+            </FXCollections></items>
+        <value>
+            <String fx:value="10" />
+        </value>
+    </ChoiceBox>
+
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="4" />
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="5" />
+    <Button onAction="#AdaugaNota" styleClass="mainPageButton" text="Adauga nota" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="6" />
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="150.0" />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+
+</GridPane>

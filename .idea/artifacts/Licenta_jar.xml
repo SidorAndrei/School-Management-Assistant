@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="Licenta:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Licenta_jar</output-path>
+    <root id="root">
+      <element id="archive" name="Licenta.jar">
+        <element id="module-output" name="Licenta" />
+      </element>
+      <element id="library" level="project" name="jfoenix-8.0.10" />
+    </root>
+  </artifact>
+</component>

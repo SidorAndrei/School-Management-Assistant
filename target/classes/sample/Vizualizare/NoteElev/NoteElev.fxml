@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.collections.FXCollections?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="sample.Vizualizare.NoteElev.NoteElevController" alignment="TOP_CENTER">
+    <Label GridPane.rowIndex="0" prefHeight="150"/>
+    <Label GridPane.rowIndex="1" GridPane.columnIndex="0" text="Semestru" styleClass="Label"/>
+    <ChoiceBox fx:id="SemestruChoiceBox" onAction="#PrevizualizareNoteElev" prefWidth="150" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="I și II" />
+                <String fx:value="I" />
+                <String fx:value="II" />
+            </FXCollections>
+        </items>
+        <value>
+            <String fx:value="I și II" />
+        </value>
+    </ChoiceBox>
+    <Label GridPane.rowIndex="2"/>
+    <TableView fx:id="NoteTableView" GridPane.columnIndex="0" GridPane.columnSpan="4" GridPane.rowIndex="3">
+        <columns>
+            <TableColumn text="Materie" minWidth="170">
+                <cellValueFactory>
+                    <PropertyValueFactory property="materie" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Nota" prefWidth="150" >
+                <cellValueFactory>
+                    <PropertyValueFactory property="Nota" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Data" prefWidth="150">
+                <cellValueFactory>
+                    <PropertyValueFactory property="data" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Semestru" prefWidth="150">
+                <cellValueFactory>
+                    <PropertyValueFactory property="semestru" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+
+</GridPane>

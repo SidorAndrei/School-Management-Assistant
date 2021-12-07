@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="TOP_CENTER" prefHeight="373.0" prefWidth="1570.0" stylesheets="/Style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Vizualizare.Elevi.EleviController">
+    <Label styleClass="Label" text="Selectati clasa pentru filtrare" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <Label prefWidth="5" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <ChoiceBox fx:id="clasaChoiceBox" onAction="#handleChoiceBoxFilter" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+    <Label prefWidth="5" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+    <ChoiceBox fx:id="localitateChoiceBox" onAction="#handleChoiceBoxFilter" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+    <ChoiceBox fx:id="sexChoiceBox" onAction="#handleSexChoiceBoxFilter" GridPane.columnIndex="5" GridPane.rowIndex="2">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Ambele sexe" />
+                <String fx:value="Masculin" />
+                <String fx:value="Feminin" />
+            </FXCollections>
+        </items>
+        <value>
+            <String fx:value="Ambele sexe" />
+        </value>
+    </ChoiceBox>
+    <ChoiceBox fx:id="stareEleviChoiceBox" onAction="#handleStareEleviChoiceBoxFilter" GridPane.columnIndex="7" GridPane.rowIndex="2">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Toti Elevii" />
+                <String fx:value="Elevi actuali" />
+                <String fx:value="Absolventi" />
+                <String fx:value="Exmatriculati" />
+            </FXCollections>
+        </items>
+        <value>
+            <String fx:value="Toti Elevii" />
+        </value>
+    </ChoiceBox>
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="4" />
+    <TableView fx:id="eleviTableView" GridPane.columnIndex="0" GridPane.columnSpan="20" GridPane.rowIndex="5">
+    <columns>
+        <TableColumn text="Numar Matricol">
+            <cellValueFactory><PropertyValueFactory property="idElev" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Nume Elev">
+            <cellValueFactory><PropertyValueFactory property="numeElev" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Prenume Elev">
+            <cellValueFactory><PropertyValueFactory property="prenumeElev" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="CNP">
+            <cellValueFactory><PropertyValueFactory property="cnp" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Data Nastere">
+            <cellValueFactory><PropertyValueFactory property="dataNastere" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Județ">
+            <cellValueFactory><PropertyValueFactory property="judet" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Localitate">
+            <cellValueFactory><PropertyValueFactory property="localitate" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Strada">
+            <cellValueFactory><PropertyValueFactory property="strada" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Numar">
+            <cellValueFactory><PropertyValueFactory property="numar" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Bloc">
+            <cellValueFactory><PropertyValueFactory property="bloc" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Scara">
+            <cellValueFactory><PropertyValueFactory property="scara" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Etaj">
+            <cellValueFactory><PropertyValueFactory property="etaj" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Apartament">
+            <cellValueFactory><PropertyValueFactory property="apartament" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Clasa">
+            <cellValueFactory><PropertyValueFactory property="clasa" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Prenume Mama">
+            <cellValueFactory><PropertyValueFactory property="prenumeMama" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Prenume Tata">
+            <cellValueFactory><PropertyValueFactory property="prenumeTata" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Telefon Elev">
+            <cellValueFactory><PropertyValueFactory property="telefonElev" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Telefon Parinte">
+            <cellValueFactory><PropertyValueFactory property="telefonParinte" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Data Adaugare">
+            <cellValueFactory><PropertyValueFactory property="Data_adaugare" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Data Absolvire">
+            <cellValueFactory><PropertyValueFactory property="Data_absolvire" />
+            </cellValueFactory>
+        </TableColumn>
+        <TableColumn text="Data Exmatriculare">
+            <cellValueFactory><PropertyValueFactory property="Data_exmatriculare" />
+            </cellValueFactory>
+        </TableColumn>
+    </columns>
+    </TableView>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints minHeight="150.0" />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

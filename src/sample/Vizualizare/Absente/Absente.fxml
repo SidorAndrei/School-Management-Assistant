@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="TOP_CENTER" prefHeight="400.0" prefWidth="900.0" stylesheets="/Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Vizualizare.Absente.AbsenteController">
+    <Label GridPane.rowIndex="0" />
+    <Label styleClass="Label" text="Clasa elev: " GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <ChoiceBox fx:id="ClasaChoiceBox" onAction="#handleClasaChoiceBox" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="IX" />
+                <String fx:value="X" />
+                <String fx:value="XI" />
+                <String fx:value="XII" />
+            </FXCollections>
+        </items>
+        <value>
+            <String fx:value="IX" />
+        </value>
+    </ChoiceBox>
+    <ChoiceBox fx:id="LiteraChoiceBox" onAction="#handleClasaChoiceBox" GridPane.columnIndex="2" GridPane.rowIndex="1">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="A" />
+                <String fx:value="B" />
+                <String fx:value="C" />
+                <String fx:value="D" />
+            </FXCollections>
+        </items>
+        <value>
+            <String fx:value="A" />
+        </value>
+    </ChoiceBox>
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <Label styleClass="Label" text="Elev: " GridPane.columnIndex="0" GridPane.rowIndex="3" />
+    <ChoiceBox fx:id="ElevChoiceBox" onAction="#handleElevChoiceBox" prefWidth="150" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    <Label styleClass="Label" text="Semestru: " GridPane.columnIndex="3" GridPane.rowIndex="3" />
+    <ChoiceBox fx:id="SemestruChoiceBox" onAction="#handleElevChoiceBox" prefWidth="150" GridPane.columnIndex="4" GridPane.rowIndex="3">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="I și II" />
+                <String fx:value="I" />
+                <String fx:value="II" />
+
+            </FXCollections>
+        </items>
+        <value>
+            <String fx:value="I și II" />
+        </value>
+    </ChoiceBox>
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="4" />
+    <Label fx:id="AbsenteMotivate" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+    <Label fx:id="AbsenteNemotivate" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="6" />
+    <TableView fx:id="AbsenteTableView" prefWidth="600" GridPane.columnIndex="0" GridPane.columnSpan="5" GridPane.rowIndex="7">
+        <columns>
+            <TableColumn minWidth="170" text="Materie">
+                <cellValueFactory>
+                    <PropertyValueFactory property="Materie" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="150" text="Motivata?">
+                <cellValueFactory>
+                    <PropertyValueFactory property="Motivata" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="150" text="Data">
+                <cellValueFactory>
+                    <PropertyValueFactory property="Data" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="70" text="Semestru">
+                <cellValueFactory>
+                    <PropertyValueFactory property="Semestru" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="150.0" prefHeight="150.0" />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+
+</GridPane>

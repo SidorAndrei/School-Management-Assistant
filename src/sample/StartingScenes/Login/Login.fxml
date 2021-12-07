@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="background" fx:id="LoginBox" alignment="CENTER" maxHeight="550.0" maxWidth="600.0" minHeight="350.0" minWidth="400.0"
+      prefHeight="450.0" prefWidth="500.0" spacing="10" stylesheets="/Style.css" xmlns="http://javafx.com/javafx/11.0.1"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StartingScenes.Login.LoginController"
+      styleClass="loginpage">
+    <Label id="Label" fx:id="usernameLabel" text="Username:" styleClass="log-Label"/>
+    <TextField fx:id="usernameField" maxWidth="200" onKeyReleased="#handleKeyReleased" prefHeight="60" prefWidth="200" styleClass="log-text-field"/>
+    <Label id="Label" fx:id="passwordLabel" text="Password:" styleClass="log-Label"/>
+    <PasswordField fx:id="passwordField" maxWidth="200" prefHeight="60" prefWidth="200" styleClass="log-text-field"/>
+    <Label />
+    <HBox alignment="CENTER" prefWidth="800" spacing="30">
+        <Button id="LoginButton" fx:id="LoginButton" alignment="CENTER" defaultButton="true"  onKeyPressed="#LoginConnection" onAction="#LoginConnection" prefHeight="50" prefWidth="100" text="Login" styleClass="mainPageButton">
+         <effect>
+             <DropShadow />
+         </effect>
+        </Button>
+<!--        <Button id="LoginButton" fx:id="SignupButton" onAction="#SignUp" alignment="CENTER" prefHeight="50" prefWidth="120" text="Sign Up" styleClass="mainPageButton">-->
+<!--         <effect>-->
+<!--             <DropShadow />-->
+<!--         </effect>-->
+<!--        </Button>-->
+        <Button fx:id="EXITButton" cancelButton="true" mnemonicParsing="false" onKeyPressed="#EXIT" onAction="#EXIT" prefHeight="50.0" prefWidth="100" text="EXIT" styleClass="mainPageButton">
+         <effect>
+             <DropShadow />
+         </effect>
+        </Button>
+    </HBox>
+   <padding>
+      <Insets bottom="10.0" left="30.0" right="10.0" top="30.0" />
+   </padding>
+</VBox>

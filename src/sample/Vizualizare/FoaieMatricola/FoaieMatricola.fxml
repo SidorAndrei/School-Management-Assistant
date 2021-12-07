@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.collections.FXCollections?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="sample.Vizualizare.FoaieMatricola.FoaieMatricolaController"
+          prefHeight="400.0" prefWidth="600.0">
+    <Label GridPane.rowIndex="0" />
+    <Label styleClass="Label" text="Clasa elev: " GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <ChoiceBox fx:id="ClasaChoiceBox" onAction="#handleClasaChoiceBox" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="IX" />
+                <String fx:value="X" />
+                <String fx:value="XI" />
+                <String fx:value="XII" />
+            </FXCollections>
+        </items>
+        <value>
+            <String fx:value="IX" />
+        </value>
+    </ChoiceBox>
+    <ChoiceBox fx:id="LiteraChoiceBox" onAction="#handleClasaChoiceBox" GridPane.columnIndex="2" GridPane.rowIndex="1">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="A" />
+                <String fx:value="B" />
+                <String fx:value="C" />
+                <String fx:value="D" />
+            </FXCollections>
+        </items>
+        <value>
+            <String fx:value="A" />
+        </value>
+    </ChoiceBox>
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <Label styleClass="Label" text="Elev: " GridPane.columnIndex="0" GridPane.rowIndex="3" />
+    <ChoiceBox fx:id="ElevChoiceBox" onAction="#handleElevChoiceBox" prefWidth="150" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="4" />
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="6" />
+    <TableView fx:id="AbsenteTableView" prefWidth="600" GridPane.columnIndex="0" GridPane.columnSpan="5" GridPane.rowIndex="6">
+        <columns>
+            <TableColumn minWidth="170" text="Materie">
+                <cellValueFactory>
+                    <PropertyValueFactory property="Materie" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="150" text="Motivata?">
+                <cellValueFactory>
+                    <PropertyValueFactory property="Motivata" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="150" text="Data">
+                <cellValueFactory>
+                    <PropertyValueFactory property="Data" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="70" text="Semestru">
+                <cellValueFactory>
+                    <PropertyValueFactory property="Semestru" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="150.0" prefHeight="150.0" />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+
+
+</GridPane>

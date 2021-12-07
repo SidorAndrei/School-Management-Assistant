@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="TOP_CENTER" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Vizualizare.CatalogClasa.CatalogController">
+    <Label styleClass="Label" text="Clasa elev: " GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <ChoiceBox fx:id="ClasaChoiceBox" onAction="#handleClasaChoiceBox" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="IX" />
+                <String fx:value="X" />
+                <String fx:value="XI" />
+                <String fx:value="XII" />
+            </FXCollections>
+        </items>
+        <value>
+            <String fx:value="IX" />
+        </value>
+    </ChoiceBox>
+    <ChoiceBox fx:id="LiteraChoiceBox" onAction="#handleClasaChoiceBox" GridPane.columnIndex="2" GridPane.rowIndex="1">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="A" />
+                <String fx:value="B" />
+                <String fx:value="C" />
+                <String fx:value="D" />
+            </FXCollections>
+        </items>
+        <value>
+            <String fx:value="A" />
+        </value>
+    </ChoiceBox>
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <Label GridPane.columnIndex="2" GridPane.rowIndex="4" />
+    <TableView fx:id="CatalogTableView" GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.rowIndex="5">
+        <columns>
+            <TableColumn text="Elev" prefWidth="150" >
+                <cellValueFactory>
+                    <PropertyValueFactory property="elev" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Romana">
+                <cellValueFactory>
+                    <PropertyValueFactory property="noteRomana" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Matematica">
+                <cellValueFactory>
+                    <PropertyValueFactory property="noteMatematica" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Admin">
+                <cellValueFactory>
+                    <PropertyValueFactory property="noteAdmin" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Biologie">
+                <cellValueFactory>
+                    <PropertyValueFactory property="noteBiologie" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Chimie">
+                <cellValueFactory>
+                    <PropertyValueFactory property="noteChimie" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Sport">
+                <cellValueFactory>
+                    <PropertyValueFactory property="noteSport" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Engleza">
+                <cellValueFactory>
+                    <PropertyValueFactory property="noteEngleza" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Franceza">
+                <cellValueFactory>
+                    <PropertyValueFactory property="noteFranceza" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Geografie">
+                <cellValueFactory>
+                    <PropertyValueFactory property="noteGeografie" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Informatica">
+                <cellValueFactory>
+                    <PropertyValueFactory property="noteInformatica" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Istorie">
+                <cellValueFactory>
+                    <PropertyValueFactory property="noteIstorie" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Religie">
+                <cellValueFactory>
+                    <PropertyValueFactory property="noteReligie" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Purtare">
+                <cellValueFactory>
+                    <PropertyValueFactory property="notePurtare" />
+                </cellValueFactory>
+            </TableColumn>
+
+        </columns>
+    </TableView>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+
+</GridPane>

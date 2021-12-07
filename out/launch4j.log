@@ -1,0 +1,195 @@
+
+
+Version:	3.14
+CmdLine:	D:\Licenta\out\LicenceApp.exe --l4j-debug
+WOW64:		yes
+Create mutex:	LicenceApp
+Working dir:	D:\Licenta\out\.
+Java min ver:	1.008.000
+Java max ver:	
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Check launcher:	C:\Program Files\Java\jre1.8.0_291\bin\javaw.exe (OK)
+Match:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_291
+Check launcher:	C:\Program Files\Java\jre1.8.0_291\bin\javaw.exe (OK)
+Match:		1.008.000_291
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8.0_261
+Ignore:		1.008.000_261
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\11.0.9
+Check launcher:	C:\Program Files\Java\jdk-11.0.9\bin\javaw.exe (OK)
+Match:		1.011.000_009
+Runtime used:	1.011.000_009 (64-bit)
+Main class:	sample.Main
+Add classpath:	ojdbc8.jar
+Add classpath:	jfoenix-8.0.10.jar
+Launcher:	C:\Program Files\Java\jdk-11.0.9\bin\javaw.exe
+Launcher args:	-classpath "D:\Licenta\out\LicenceApp.exe;ojdbc8.jar;jfoenix-8.0.10.jar" sample.Main
+Args length:	84/32768 chars
+Exit code:	0
+
+
+Version:	3.14
+CmdLine:	D:\Licenta\out\LicenceApp.exe --l4j-debug
+WOW64:		yes
+Create mutex:	LicenceApp
+Working dir:	D:\Licenta\out\.
+Java min ver:	1.008.000
+Java max ver:	
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Check launcher:	C:\Program Files\Java\jre1.8.0_291\bin\javaw.exe (OK)
+Match:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_291
+Check launcher:	C:\Program Files\Java\jre1.8.0_291\bin\javaw.exe (OK)
+Match:		1.008.000_291
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8.0_261
+Ignore:		1.008.000_261
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\11.0.9
+Check launcher:	C:\Program Files\Java\jdk-11.0.9\bin\javaw.exe (OK)
+Match:		1.011.000_009
+Runtime used:	1.011.000_009 (64-bit)
+Main class:	sample.Main
+Add classpath:	ojdbc8.jar
+Add classpath:	jfoenix-8.0.10.jar
+Launcher:	C:\Program Files\Java\jdk-11.0.9\bin\javaw.exe
+Launcher args:	-classpath "D:\Licenta\out\LicenceApp.exe;ojdbc8.jar;jfoenix-8.0.10.jar" sample.Main
+Args length:	84/32768 chars
+Exit code:	0
+
+
+Version:	3.14
+CmdLine:	D:\Licenta\out\LicenceApp.exe --l4j-debug
+WOW64:		yes
+Create mutex:	LicenceApp
+Working dir:	D:\Licenta\out\.
+Java min ver:	1.008.000
+Java max ver:	
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Check launcher:	C:\Program Files\Java\jre1.8.0_291\bin\javaw.exe (OK)
+Match:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_291
+Check launcher:	C:\Program Files\Java\jre1.8.0_291\bin\javaw.exe (OK)
+Match:		1.008.000_291
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8.0_261
+Ignore:		1.008.000_261
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\11.0.9
+Check launcher:	C:\Program Files\Java\jdk-11.0.9\bin\javaw.exe (OK)
+Match:		1.011.000_009
+Runtime used:	1.011.000_009 (64-bit)
+Main class:	sample.Main
+Add classpath:	ojdbc8.jar
+Add classpath:	jfoenix-8.0.10.jar
+Launcher:	C:\Program Files\Java\jdk-11.0.9\bin\javaw.exe
+Launcher args:	-classpath "D:\Licenta\out\LicenceApp.exe;ojdbc8.jar;jfoenix-8.0.10.jar" sample.Main
+Args length:	84/32768 chars
+Exit code:	0
+
+
+Version:	3.14
+CmdLine:	D:\Licenta\out\LicenceApp.exe --l4j-debug
+WOW64:		yes
+Create mutex:	LicenceApp
+Working dir:	D:\Licenta\out\.
+Java min ver:	1.008.000
+Java max ver:	
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Check launcher:	C:\Program Files\Java\jre1.8.0_291\bin\javaw.exe (OK)
+Match:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_291
+Check launcher:	C:\Program Files\Java\jre1.8.0_291\bin\javaw.exe (OK)
+Match:		1.008.000_291
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8.0_261
+Ignore:		1.008.000_261
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\11.0.9
+Check launcher:	C:\Program Files\Java\jdk-11.0.9\bin\javaw.exe (OK)
+Match:		1.011.000_009
+Runtime used:	1.011.000_009 (64-bit)
+Launcher:	C:\Program Files\Java\jdk-11.0.9\bin\javaw.exe
+Launcher args:	-jar "D:\Licenta\out\LicenceApp.exe"
+Args length:	36/32768 chars
+Exit code:	0
+
+
+Version:	3.14
+CmdLine:	D:\Licenta\out\LicenceApp.exe --l4j-debug
+WOW64:		yes
+Create mutex:	LicenceApp
+Working dir:	D:\Licenta\out\.
+Java min ver:	1.008.000
+Java max ver:	
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Check launcher:	C:\Program Files\Java\jre1.8.0_291\bin\javaw.exe (OK)
+Match:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_291
+Check launcher:	C:\Program Files\Java\jre1.8.0_291\bin\javaw.exe (OK)
+Match:		1.008.000_291
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8.0_261
+Ignore:		1.008.000_261
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\11.0.9
+Check launcher:	C:\Program Files\Java\jdk-11.0.9\bin\javaw.exe (OK)
+Match:		1.011.000_009
+Runtime used:	1.011.000_009 (64-bit)
+Launcher:	C:\Program Files\Java\jdk-11.0.9\bin\javaw.exe
+Launcher args:	-jar "D:\Licenta\out\LicenceApp.exe"
+Args length:	36/32768 chars
+Exit code:	0
+
+
+Version:	3.14
+CmdLine:	D:\Licenta\out\LicenceApp.exe --l4j-debug
+WOW64:		yes
+Create mutex:	LicenceApp
+Working dir:	D:\Licenta\out\.
+Java min ver:	1.008.000
+Java max ver:	
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Check launcher:	C:\Program Files\Java\jre1.8.0_291\bin\javaw.exe (OK)
+Match:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_291
+Check launcher:	C:\Program Files\Java\jre1.8.0_291\bin\javaw.exe (OK)
+Match:		1.008.000_291
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8.0_261
+Ignore:		1.008.000_261
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\11.0.9
+Check launcher:	C:\Program Files\Java\jdk-11.0.9\bin\javaw.exe (OK)
+Match:		1.011.000_009
+Runtime used:	1.011.000_009 (64-bit)
+Launcher:	C:\Program Files\Java\jdk-11.0.9\bin\javaw.exe
+Launcher args:	-jar "D:\Licenta\out\LicenceApp.exe"
+Args length:	36/32768 chars
+Exit code:	0

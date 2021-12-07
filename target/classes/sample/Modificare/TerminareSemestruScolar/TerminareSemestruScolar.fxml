@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="TOP_CENTER" prefHeight="400.0" prefWidth="600.0" stylesheets="/Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Modificare.TerminareSemestruScolar.TerminareSemestruScolarController">
+    <Label fx:id="MesajLabel" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="3"/>
+    <Label fx:id="Label" styleClass="Label" GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.rowIndex="1" GridPane.halignment="CENTER"/>
+    <Label GridPane.rowIndex="2" />
+<!--    <Label styleClass="Label" text="Semestrul se va încheia doar dacă toti elevii au destule note pentru a se încheia media la fiecare materie." GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.rowIndex="3" GridPane.halignment="CENTER"/>-->
+    <Label minHeight="80" GridPane.rowIndex="4" />
+    <Button styleClass="mainPageButton" text="Terminare Semestru" GridPane.columnIndex="0" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" onAction="#TerminareSemestru"/>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="150.0" />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

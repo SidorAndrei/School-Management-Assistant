@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="sample.HomePage.HomePage" alignment="TOP_CENTER" maxHeight="600" maxWidth="800">
+    <Label prefHeight="150"/>
+    <Label styleClass="Label" alignment="CENTER" fx:id="FirstLabel"/>
+    <Label styleClass="Label" alignment="CENTER" fx:id="SecondLabel"/>
+
+    <Label prefHeight="50"/>
+    <Label styleClass="Label" alignment="CENTER" text="Această aplicație este creată de Sidor Marian-Andrei"/>
+
+</VBox>

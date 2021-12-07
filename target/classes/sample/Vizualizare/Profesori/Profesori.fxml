@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="TOP_CENTER" prefHeight="400.0" prefWidth="1200.0" stylesheets="/Style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Vizualizare.Profesori.ProfesoriController">
+    <Label styleClass="Label" text="Selectati materia pentru a filtra " GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <Label prefWidth="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <ChoiceBox fx:id="profesorChoiceBox" onAction="#handleChoiceBoxFilter" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+    <Label prefWidth="5" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+    <ChoiceBox fx:id="localitateChoiceBox" onAction="#handleChoiceBoxFilter" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+    <Label prefWidth="5" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+    <ChoiceBox fx:id="sexChoiceBox" onAction="#handleSexChoiceBoxFilter" GridPane.columnIndex="6" GridPane.rowIndex="1">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Ambele sexe" />
+                <String fx:value="Masculin" />
+                <String fx:value="Feminin" />
+            </FXCollections>
+        </items>
+        <value>
+            <String fx:value="Ambele sexe" />
+        </value>
+    </ChoiceBox>
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="3" />
+    <TableView fx:id="profesoriTableView" GridPane.columnIndex="0" GridPane.columnSpan="20" GridPane.rowIndex="4" prefWidth="1500">
+        <columns>
+            <TableColumn text="ID Profesor">
+                <cellValueFactory><PropertyValueFactory property="ID" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Nume Profesor">
+                <cellValueFactory><PropertyValueFactory property="numeProfesor" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Prenume Profesor">
+                <cellValueFactory><PropertyValueFactory property="prenumeProfesor" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="CNP">
+                <cellValueFactory><PropertyValueFactory property="cnp" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Data Nastere">
+                <cellValueFactory><PropertyValueFactory property="dataNastere" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Județ">
+                <cellValueFactory><PropertyValueFactory property="judet" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Localitate">
+                <cellValueFactory><PropertyValueFactory property="localitate" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Strada">
+                <cellValueFactory><PropertyValueFactory property="strada" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Numar">
+                <cellValueFactory><PropertyValueFactory property="numar" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Bloc">
+                <cellValueFactory><PropertyValueFactory property="bloc" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Scara">
+                <cellValueFactory><PropertyValueFactory property="scara" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Etaj">
+                <cellValueFactory><PropertyValueFactory property="etaj" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Apartament">
+                <cellValueFactory><PropertyValueFactory property="apartament" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Materie">
+                <cellValueFactory><PropertyValueFactory property="materie" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Telefon Profesor">
+                <cellValueFactory><PropertyValueFactory property="telefonProfesor" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Data Adaugare">
+                <cellValueFactory><PropertyValueFactory property="data_adaugare" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Data Concediere">
+                <cellValueFactory><PropertyValueFactory property="data_concediere" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="150.0" />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+
+</GridPane>

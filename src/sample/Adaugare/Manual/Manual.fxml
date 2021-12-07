@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="TOP_CENTER" prefHeight="200.0" prefWidth="300.0" stylesheets="/Style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Adaugare.Manual.ManualController">
+    <Label fx:id="MesajLabel" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.columnSpan="3"/>
+
+        <!--Randul 1-->
+        <Label styleClass="Label" text="Clasa:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <ChoiceBox fx:id="ClasaChoiceBox" onAction="#initialize" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                <items><FXCollections fx:factory="observableArrayList">
+                        <String fx:value="IX" />
+                        <String fx:value="X" />
+                        <String fx:value="XI" />
+                        <String fx:value="XII" />
+                </FXCollections></items>
+                <value><String fx:value="IX" /></value>
+        </ChoiceBox>
+        <Label GridPane.columnIndex="0" />
+        <!--Randul 2-->
+        <Label styleClass="Label" text="Materie" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <ChoiceBox fx:id="MaterieChoiceBox" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+        <Label GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <!--Randul 3-->
+        <Label styleClass="Label" text="Nume Manual:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+        <Label prefWidth="10" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <TextField fx:id="NumeManualField" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+        <Label GridPane.columnIndex="0" GridPane.rowIndex="6" />
+        <!--Randul 4-->
+        <Label styleClass="Label" text="Editura Manual:" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+        <TextField fx:id="EdituraManualField" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+
+        <Label GridPane.columnIndex="0" GridPane.rowIndex="8" />
+        <Label GridPane.columnIndex="0" GridPane.rowIndex="9" />
+        <Button onAction="#AdaugaManual" styleClass="mainPageButton" text="Adauga manual" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="10" />
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="150.0" />
+      <RowConstraints />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

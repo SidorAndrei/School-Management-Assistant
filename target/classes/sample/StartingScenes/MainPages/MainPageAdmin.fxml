@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--suppress XmlPathReference -->
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="MainBorder" styleClass="mainPage" stylesheets="/Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StartingScenes.MainPages.MainPageController">
+    <top>
+
+        <HBox alignment="CENTER_RIGHT">
+            <Label styleClass="logo" text="School Management System" />
+            <Label prefWidth="700" />
+            <Button maxHeight="30" maxWidth="30" onAction="#Minimize" prefHeight="30" prefWidth="30" styleClass="minimizebutton" />
+            <Label prefWidth="2" />
+            <Button maxHeight="30" maxWidth="30" onAction="#EXIT" prefHeight="30" prefWidth="30" styleClass="exitbutton" />
+        </HBox>
+    </top>
+    <left>
+        <VBox>
+        <TitledPane fx:id="AdaugaTitledPane" expanded="false" minWidth="200" prefWidth="200" styleClass="titled-pane" text="Adauga...">
+            <VBox>
+                <padding>
+                    <Insets topRightBottomLeft="10" />
+                </padding>
+                <Button onAction="#AdaugaElev" styleClass="TitledPaneButton" text="Elev" />
+                <Label maxHeight="3" prefHeight="1" />
+                <Button onAction="#AdaugaNota" styleClass="TitledPaneButton" text="Nota" />
+                <Label maxHeight="3" prefHeight="1" />
+                <Button onAction="#AdaugaAbsenta" styleClass="TitledPaneButton" text="Absenta" />
+                <Label maxHeight="3" prefHeight="1" />
+                <Button onAction="#AdaugaProfesor" styleClass="TitledPaneButton" text="Profesor" />
+                <Label maxHeight="3" prefHeight="1" />
+                <Button onAction="#AdaugaContUtilizator" styleClass="TitledPaneButton" text="Cont utilizator" />
+                <Label maxHeight="3" prefHeight="1" />
+                <Button onAction="#AdaugaManual" styleClass="TitledPaneButton" text="Manual" />
+            </VBox>
+        </TitledPane>
+            <TitledPane fx:id="ModificaTitledPane" expanded="false" styleClass="titled-pane" text="Modifica...">
+                <VBox>
+                    <padding>
+                        <Insets topRightBottomLeft="10" />
+                    </padding>
+                    <Button onAction="#TerminareSemestru" styleClass="TitledPaneButton" text="Terminare Semestru" />
+                    <Label />
+                    <Button onAction="#TerminarAnScolar" styleClass="TitledPaneButton" text="Terminare An Scolar" />
+                </VBox>
+            </TitledPane>
+            <TitledPane fx:id="VizualizareTitledPane" expanded="false" styleClass="titled-pane" text="Vizualizare...">
+                <VBox>
+                    <padding>
+                        <Insets topRightBottomLeft="10" />
+                    </padding>
+                    <Button onAction="#VizualizareElevi" styleClass="TitledPaneButton" text="Elevi" />
+                    <Label />
+                    <Button onAction="#VizualizareNote" styleClass="TitledPaneButton" text="Note" />
+                    <Label />
+                    <Button onAction="#VizualizareAbsente" styleClass="TitledPaneButton" text="Absente" />
+                    <Label />
+                    <Button onAction="#CalculareMedie" styleClass="TitledPaneButton" text="Calculare Medii" />
+                    <Label />
+                    <Button onAction="#VizualizareProfesori" styleClass="TitledPaneButton" text="Profesori" />
+                </VBox>
+            </TitledPane>
+            <TitledPane styleClass="titled-pane" text="Opțiuni aplicatie">
+                <VBox>
+                    <padding>
+                        <Insets topRightBottomLeft="10" />
+                    </padding>
+                    <Button onAction="#HOME" text="HOME" styleClass="TitledPaneButton"/>
+                    <Label/>
+                    <Button onAction="#EXIT" text="EXIT" styleClass="TitledPaneButton"/>
+                </VBox>
+            </TitledPane>
+        </VBox>
+    </left>
+    <bottom>
+        <HBox alignment="CENTER">
+            <Label fx:id="SemestruLabel"  onKeyPressed="#SemestruLabel" onMouseClicked="#SemestruLabel" styleClass="Label3"/>
+        </HBox>
+    </bottom>
+
+</BorderPane>
