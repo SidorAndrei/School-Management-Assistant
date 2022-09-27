@@ -2,7 +2,7 @@
 
 ## About the project
 
-Project was made by [Marian-Andrei Sidor](https://github.com/SidorAndrei) as a bachelor degree examination project.
+Project was made by [Marian-Andrei Sidor](https://github.com/SidorAndrei) as a bachelor degree examination project in 2021 (before starting to learn at Codecool).
 
 This project is designed as a management application and digitalization in education.
 Using this project the physical documents and classbooks are digitalized and students/students' parents can check the grades without losing time at school.
